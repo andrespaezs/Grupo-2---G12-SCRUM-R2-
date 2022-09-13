@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-fycvutp&a_q@4sbwpd6!@fk3#g7=la+k_o37co=jm&lxxgjnk7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['172.0.0.1','.recupet.com']
+ALLOWED_HOSTS = ['127.0.0.1','.recupet.com']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'recuperados.apps.RecuperadosConfig',
 ]
 
 MIDDLEWARE = [
