@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+<body>
+    <body style= "background-color: #b3f5b1">
+   
+
+
+
+        <h1 style= "color: #00550e; width: 100%; font-size: 200%; text-align: center;">Formulario de Registro  
+        </h1>
+        <form style= "background-color: #1b5725"><fieldset>
+        <legend style= "color:#FDFDFD; font-size: 150%"><strong>Datos Personales</strong></legend>
+
+        <div class="container">
+            <form class="row">
+
+                <div class="col-3">
+                    <label style="color:#FDFDFD" for="Tipo de Reporte" class="form-label">Tipo de Reporte:</label>
+                    <select id="Tipo de Reporte" name="Tipo de Reporte" class="form-control" required> 
+                    <option value="vacio"></option>
+                    <option value="Mascota Perdida">Mascota Perdida</option>
+                    <option value="Mascota Encontrada">Mascota Encontrada</option>
+                    <option value="Mascota Maltratada">Mascota Maltratada</option>
+                    <option value="Mascota Abandonada">Mascota Abandonada</option>
+                    </select>
+                </div>
+                <br>
+                <div class="col-3">
+                    <Label style="color:#FDFDFD" for="Fecha de Evento" class="form-label" >Fecha de Evento:</label>
+                    <input type="date" name = "Fecha de Evento" class="form-control" required>
+                </div>
+                <br>
+                <div class="col-3">
+                    <Label style="color:#FDFDFD" for="Hora de Evento" class="form-label">Hora Aproximada del Evento:</label>
+                    <input type="time" name="Hora de Evento" class="form-control" required>
+                </div>
+                <br>
+                <div class="col-3">
+                    <label style="color:#FDFDFD" for="Nombre de Usuario" class="form-label">Nombre de Usuario:</label>
+                    <input type="text" name="Nombre de Usuario" class="form-control" required>
+                </div>
+                <br>
+                <div class="col-3">
+                    <label style="color:#FDFDFD" for="Celular Personal" class="form-label">Celular Personal:</label>
+                    <input type="text" name="Celular Personal" class="form-control" required>   
+                </div>
+                <br>
+                <div class="col-3">
+                    <label style="color:#FDFDFD" for="Celular Secundario" class="form-label">Celular Secundario:</label>    
+                    <input type="text" name="Celular Secundario" class="form-control">
+                </div>
+                <br>
+                <div class="col-3">
+                    <label style="color:#FDFDFD" for="Ubicación" class="form-label"> Ubicación:</label>   
+                    <input type="text" name="Ubicación" class="form-control" required> 
+                </div>
+                <br>
+                <div class="col-3">
+                    <label style="color:#FDFDFD" for="Nombre Mascota" class="form-label">Nombre Mascota (Opc):</label>
+                    <input type="text" name="Nombre Mascota" class="form-control">
+                </div>
+                <br>
+                <div class="col-3">
+                    <label style="color:#FDFDFD" for="Raza Mascota" class="form-label">Raza Mascota:</label>
+                    <input type="text" name="Raza Mascota" class="form-control">   
+                </div>
+                <br>
+                <div class="col-3">
+                    <label style="color:#FDFDFD" for="Color" class="form-label">Color(es):</label>    
+                    <input type="text" name="Color" class="form-control" required>
+                </div>
+                <br>
+                <div class="col-3">
+                    <label style="color:#FDFDFD" for="Color" class="form-label">Color(es):</label>    
+                    <input type="text" name="Color" class="form-control" required>
+                </div>
+                <br>
+                <div class="col-2">
+                    <label style="color:#FDFDFD" for="Sexo" class="form-label"> Sexo:</label>   
+                    <select id="Sexo" name="Sexo" class="form-control" required>
+                        <option value="vacio"></option>            
+                        <option value="Macho">Macho</option>
+                        <option value="Hembra">Hembra</option>
+                    </select>
+                </div>
+                <br>
+                <div class="col-2">
+                    <label style= "color:#FDFDFD" for="Edad" class="form-label">Edad (Opc):</label>    
+                    <input type="text" name="Edad" class="form-control">
+                </div>
+                <br>
+                <div class="col-5">
+                    <label style= "color:#FDFDFD" for="Comentario" class="form-label">Información Adicional:</label>
+                    <br>
+                    <textarea name="comentario" class="form-control" rows="3" ></textarea>
+                    <br>
+                </div>
+                <br>
+                <div class="col-2">
+                    </form>
+                    <form action="php/SubirPoto.php" method="POST" enctype="multipart/form-data">
+                    <br>
+                    <label style ="color:#FDFDFD" for="subir" class="form-label">Añadir imagen: <input name="archivo" id="archivo" type="file" accept=".jpg, .jpeg, .png" required></label>
+                    <br>
+                    <input type="submit" style="color:#FDFDFD" name="subir" class="btn btn-warning" value="Subir">
+                    </form>
+                </div>
+
+            </form>    
+        </div>
+
+        
+        <br>
+        <center>
+            <input type='button' name='boton' value='Enviar' style='width:100px; height:50px' class="btn btn-success">
+        </center>
+        <br>
+        <br>
+        </fieldset>
+        </form>
+        <br>
+        <form>
+        <fieldset>
+        <legend style= "color:#070707">Desarrollado:</legend>
+        <q style="color: #000000; font-size: 80%;">Grupo 2 - G12. MisiónTIC 2022 R2</q>
+        </fieldset>
+        </form>
+</body>
+</html>
