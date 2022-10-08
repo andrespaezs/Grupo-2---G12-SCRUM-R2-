@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+        <title></title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <!-- <link href="css/style.css" rel="stylesheet">  --> 
+       <title>Reportes</title>
+    </head>
+
+
+
+    <body>
+        <body style= "background-color: #b3f5b1">
+        <header>
+            <center>
+                <br>    
+                <img src="Recupet logo fondo banco.png" style="width:200px; height:50p"/>
+                <br>
+                <h1 style= "color: #1b5725; width: 100%; font-size: 200%; text-align: center;">Formulario de Registro  
+                </h1>
+            </center>
+            </header>  
+
+        <div>
+            <center>
+            <form id="Reporte" style= "background-color: #61875f">
+                <div>
+                    <label for="TipoDeReporte">¿Qué deseas reportar?</label>
+                    <select id="TipoReporte" name="Tipo-de-Reporte" class="form-control" required> 
+                        <option value="vacio"></option>
+                        <option value="Mascota Perdida">Mascota Perdida</option>
+                        <option value="Mascota Encontrada">Mascota Encontrada</option>
+                        <option value="Mascota Maltratada">Mascota Maltratada</option>
+                        <option value="Mascota Abandonada">Mascota Abandonada</option>
+                        </select>
+                
+                </div>
+                <div>
+                    <br>
+                    <label for="DescripcionReporte">Describe la Situacion</label>
+                    <input id = "DescripcionReporte" placeholder="Descripcion">
+                </div>
+                <div>
+                    <br>
+                    <Label for="FechaEvento">Fecha de Evento:</label>
+                    <input type="date" id="FechaEvento" required>
+                </div>
+                <div>
+                    <br>
+                    <Label for="HoraEvento">Hora de Evento:</label>
+                    <input type="time" id="HoraEvento" required>
+                </div>
+                <div>
+                    <br>
+                    <label for="LugarEvento">Lugar de Suceso</label>
+                    <input id = "LugarEvento" id="LugarEvento" required>
+                </div>
+                <div>
+                    <br>
+                    <label style ="color:#000000" for="subir" class="col-2 col-form-label">Añadir imagen: <input name="archivo" id="archivo" type="file" accept=".jpg, .jpeg, .png" required></label>
+                </div>
+                <br>
+           <button > Enviar Reporte</button>
+            </form>
+            
+        </center>
+        </div>
+        <div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
